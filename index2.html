@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts2.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="blank">
+
+        <form class="booking">
+          <div class="form-group">
+            <label for="name">Enter full name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="description">Why?:</label>
+            <input id="description" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input id="date" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input id="time" class="form-control" type="time">
+          </div>
+
+          <button type="submit" class="btn" data-toggle="modal" data-target="#myModal">Submit</button>
+        </form>
+
+      </div>
+            <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+              <div id="confirm">
+                Congratulations <span class="name"></span>, we have confirmed your <span class="description"></span> appointment for <span class="date"></span> at <span class="time"></span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <h1>Name</h1>
+      <form id="name">
+        <div class="form-group">
+          <label for="name">Enter full name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        </form>
+
+      <h1>Description</h1>
+      <form id="description">
+        <div class="form-group">
+          <label for="description">Why?:</label>
+          <input id="description" class="form-control" type="text">
+        </div>
+      </form>
+
+      <h1>Date</h1>
+      <form id="date">
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input id="date" class="form-control" type="text">
+        </div>
+      </form>
+
+      <h1>Time</h1>
+      <form id="time">
+        <div class="form-group">
+          <label for="time">1st number:</label>
+          <input id="time" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="output"></div> -->
+
+
+    </div>
+  </body>
+</html>
